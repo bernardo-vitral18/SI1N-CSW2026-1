@@ -8,26 +8,95 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="body">
-    <header>
-        <h1>Aula 13</h1>
-    </header>
+<body>
+    <h1>Flexbox</h1>
+<div style="display: flex; border: 2px solid #333; padding: 10px;">
+  <div>Item 1</div>
+  <div>Item 2</div>
+</div>
 
-    <nav>
-        <ul>
-            <li>Home</li>
-            <li>Sobre</li>
-            <li>Produtos</li>
-            <li>Serviços</li>
-        </ul>
-    </nav>
+<style>
+  .container-ex2 {
+    display: flex;
+    gap: 10px;
+    background-color: #f0f0f0;
+    padding: 10px;
+  }
+  .item-ex2 {
+    flex-grow: 1;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s;
+    background-color: lightblue;
+  }
+  /* Cores diferentes para cada item */
+  .item-ex2:nth-child(1) { background-color: #ffadad; }
+  .item-ex2:nth-child(2) { background-color: #ffd6a5; }
+  .item-ex2:nth-child(3) { background-color: #fdffb6; }
 
-    <main>
-        <article>
-            <div id="container">
-        </article>
-    </main>
+  /* Efeito de passar o mouse */
+  .item-ex2:hover {
+    text-decoration: underline;
+    filter: brightness(0.9);
+    cursor: pointer;
+  }
 
+  .container-ex3 {
+    display: flex;
+    gap: 5px;
+    padding: 10px;
+    background: #e2e2e2;
+  }
+  .item-ex3 {
+    flex-grow: 1;
+    padding: 15px;
+    background-color: #a0c4ff;
+    text-align: center;
+    user-select: none; /* Evita selecionar texto ao clicar */
+  }
+  /* Terceiro item cresce o dobro */
+  .item-ex3:nth-child(3) {
+    flex-grow: 2;
+    background-color: #bdb2ff;
+  }
+  /* Mudança de cor ao clicar */
+  .item-ex3:active {
+    background-color: #ff6464 !important;
+  }
+
+  .container-ex4 {
+    display: flex;
+    justify-content: flex-end; /* Alinha à direita */
+    border: 2px dashed #666;
+    padding: 10px;
+  }
+  .item-ex4 {
+    padding: 10px 20px;
+    background-color: #9bf6ff;
+    margin-left: 5px;
+  }
+</style>
+
+<div class="container-ex3">
+  <div class="item-ex3">1</div>
+  <div class="item-ex3">2</div>
+  <div class="item-ex3">3 (Dobro do tamanho)</div>
+  <div class="item-ex3">4</div>
+  <div class="item-ex3">5</div>
+</div>
+</style>
+
+<div class="container-ex2">
+  <div class="item-ex2">Item A</div>
+  <div class="item-ex2">Item B</div>
+  <div class="item-ex2">Item C</div>
+</div>
+
+<div class="container-ex4">
+  <div class="item-ex4">Direita 1</div>
+  <div class="item-ex4">Direita 2</div>
+  <div class="item-ex4">Direita 3</div>
+</div>
 </body>
 
 </html>
