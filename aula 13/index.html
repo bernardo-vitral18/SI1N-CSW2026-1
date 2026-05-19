@@ -1,102 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aula 13</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <h1>Flexbox</h1>
-<div style="display: flex; border: 2px solid #333; padding: 10px;">
-  <div>Item 1</div>
-  <div>Item 2</div>
-</div>
-
-<style>
-  .container-ex2 {
-    display: flex;
-    gap: 10px;
-    background-color: #f0f0f0;
-    padding: 10px;
-  }
-  .item-ex2 {
-    flex-grow: 1;
-    padding: 20px;
-    text-align: center;
-    transition: all 0.3s;
-    background-color: lightblue;
-  }
-  /* Cores diferentes para cada item */
-  .item-ex2:nth-child(1) { background-color: #ffadad; }
-  .item-ex2:nth-child(2) { background-color: #ffd6a5; }
-  .item-ex2:nth-child(3) { background-color: #fdffb6; }
-
-  /* Efeito de passar o mouse */
-  .item-ex2:hover {
-    text-decoration: underline;
-    filter: brightness(0.9);
-    cursor: pointer;
-  }
-
-  .container-ex3 {
-    display: flex;
-    gap: 5px;
-    padding: 10px;
-    background: #e2e2e2;
-  }
-  .item-ex3 {
-    flex-grow: 1;
-    padding: 15px;
-    background-color: #a0c4ff;
-    text-align: center;
-    user-select: none; /* Evita selecionar texto ao clicar */
-  }
-  /* Terceiro item cresce o dobro */
-  .item-ex3:nth-child(3) {
-    flex-grow: 2;
-    background-color: #bdb2ff;
-  }
-  /* Mudança de cor ao clicar */
-  .item-ex3:active {
-    background-color: #ff6464 !important;
-  }
-
-  .container-ex4 {
-    display: flex;
-    justify-content: flex-end; /* Alinha à direita */
-    border: 2px dashed #666;
-    padding: 10px;
-  }
-  .item-ex4 {
-    padding: 10px 20px;
-    background-color: #9bf6ff;
-    margin-left: 5px;
-  }
-</style>
-
-<div class="container-ex3">
-  <div class="item-ex3">1</div>
-  <div class="item-ex3">2</div>
-  <div class="item-ex3">3 (Dobro do tamanho)</div>
-  <div class="item-ex3">4</div>
-  <div class="item-ex3">5</div>
-</div>
-</style>
-
-<div class="container-ex2">
-  <div class="item-ex2">Item A</div>
-  <div class="item-ex2">Item B</div>
-  <div class="item-ex2">Item C</div>
-</div>
-
-<div class="container-ex4">
-  <div class="item-ex4">Direita 1</div>
-  <div class="item-ex4">Direita 2</div>
-  <div class="item-ex4">Direita 3</div>
-</div>
+    <header>
+        <h1>Exercícios de Flexbox</h1>
+    </header>
+    <main>
+        <section class="ex1">
+            <h2>Exercício 1</h2>
+            <div class="container">
+                <div class="item">Item1</div>
+            </div>
+        </section>
+        <section class="ex2">
+            <h2>Exercício 2</h2>
+            <div class="container">
+                <div class="item vermelho">Item1</div>
+                <div class="item verde">Item2</div>
+                <div class="item azul">Item3</div>
+            </div>
+        </section>
+        <section class="ex3">
+            <h2>Exercício 3</h2>
+            <div class="container">
+                <div class="item">Item1</div>
+                <div class="item">Item2</div>
+                <div class="item destaque">Item3</div>
+                <div class="item">Item4</div>
+                <div class="item">Item5</div>
+            </div>
+        </section>
+        <section class="ex4">
+            <h2>Exercício 4</h2>
+            <div class="container">
+                <div class="item">Item1</div>
+                <div class="item">Item2</div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Feito por Bernardo</p>
+    </footer>
 </body>
-
 </html>
